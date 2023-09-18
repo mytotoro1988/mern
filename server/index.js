@@ -8,6 +8,4 @@ app.get("/", (req, res) =>
 
 const PORT = 5000;
 
-app.listen(PORT, () => {
-  ` Server stared on port : ${PORT}`;
-});
+app.listen(PORT, () => console.log(` Server stared on port : ${PORT}`));
