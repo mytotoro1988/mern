@@ -20,6 +20,10 @@ const connectDB = async () => {
 connectDB();
 const app = express();
 
+app.get("/", (req, res) =>
+  res.send("hello world! wellcome to fullstack. commit from dev")
+);
+
 app.use(express.json());
 
 app.use("/api/auth", authRouter);

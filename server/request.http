@@ -13,19 +13,20 @@ POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "cuonglh12",
+    "username": "cuonglh",
     "password":  "cuonglh"
 }
 
-###
+### 1:08:00
 
 POST http://localhost:5000/api/posts
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTBhMWYyMjAxNDY4YWExMzhkNDZhODYiLCJpYXQiOjE2OTUzMTgwODh9.Zr4Stjtcfx7Mz1eguncsRV_x3zXTFrmIwraztSbin3Q
 
 {
-    "title":"tieu de",
-    "description":  "abc",
-    "url":  "google.com",
-    "status":  "LEARNING"
+    "title":"cuong love hai",
+    "description":  "ahihi",
+    "url":  "youtube.com/watch?v=rgFd17fyM4A",
+    "status":  "LOVE"
 }
 
