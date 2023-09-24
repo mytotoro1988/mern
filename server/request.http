@@ -2,7 +2,7 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "cuonglh1",
+    "username": "cuonglh7",
     "password":  "cuonglh"
 }
 
@@ -21,12 +21,36 @@ Content-Type: application/json
 
 POST http://localhost:5000/api/posts
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTBhMWYyMjAxNDY4YWExMzhkNDZhODYiLCJpYXQiOjE2OTUzMTgwODh9.Zr4Stjtcfx7Mz1eguncsRV_x3zXTFrmIwraztSbin3Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTBmOTVjNzI5YWU1MzFhMmQyYTM3NTEiLCJpYXQiOjE2OTU1MjAxOTl9._nZkzywuYabQIZwjM0KrTYh6AGp_9zhYd_Xh-30nTo8
 
 {
-    "title":"cuong love hai",
-    "description":  "ahihi",
+    "title":"cuong love hai 444444",
+    "description":  "ahihi test",
     "url":  "youtube.com/watch?v=rgFd17fyM4A",
     "status":  "LOVE"
 }
 
+### 
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTBhMWYyMjAxNDY4YWExMzhkNDZhODYiLCJpYXQiOjE2OTU1Mjc2NTR9.fDM1d-3w0cmPWCyJWNZ_OSESuKzDi6MHO4zlurTLfb4
+
+
+### 
+
+PUT http://localhost:5000/api/posts/650afa4468e835d87d91e4a3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTBhMWYyMjAxNDY4YWExMzhkNDZhODYiLCJpYXQiOjE2OTU1Mjc2NTR9.fDM1d-3w0cmPWCyJWNZ_OSESuKzDi6MHO4zlurTLfb4
+
+{
+    "title":"Update Vuejs",
+    "description":  "",
+    "url":  "youtube.com/watch?v=rgFd17fyM4A",
+    "status":  "LOVE"
+}
+
+
+### 
+
+DELETE http://localhost:5000/api/posts/650c72a1ccf69224533e1611
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTBhMWYyMjAxNDY4YWExMzhkNDZhODYiLCJpYXQiOjE2OTU1Mjc2NTR9.fDM1d-3w0cmPWCyJWNZ_OSESuKzDi6MHO4zlurTLfb4
