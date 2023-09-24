@@ -11,7 +11,6 @@ const User = require("../models/user");
 //@access Public
 
 router.post("/register", async (req, res) => {
-  console.log("123");
   const { username, password } = req.body;
 
   //Simple validate
