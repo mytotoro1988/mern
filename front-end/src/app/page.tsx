@@ -1,19 +1,14 @@
 "use client";
 import Link from "next/link";
+import variables from "./variables.module.scss";
 import { useRouter } from "next/navigation";
 export default function Page() {
   const router = useRouter();
+
   return (
-    <div style={{ height: "100vh" }}>
-      <Link
-        href={{
-          pathname: "/dashboard",
-          query: { name: "tes123t11111" },
-        }}
-      >
-        About
-      </Link>
-      <div style={{ height: 500 }}>
+    <div>
+      <h1 style={{ color: variables.primaryColor }}>Hello, Next.js!</h1>
+      <div>
         <Link href="/dashboard#test">Settings</Link>
       </div>
       <button type="button" onClick={() => router.push("/dashboard")}>
